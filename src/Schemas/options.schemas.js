@@ -12,7 +12,8 @@ const optionSchema = new mongoose.Schema({
     link_toVote: {
         type: String,
         default: function() {
-            return `http://localhost:3000/options/${this._id}/add_vote`;
+            return `https://pollingapi-ccwu.onrender.com/options/${this._id}/add_vote`;
+			
         }
     }
 });
